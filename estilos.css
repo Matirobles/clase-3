@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+* {font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+header .imagen img{
+    height: 80px;
+    width: auto;
+    padding: 10px;
+}
+
+header .nav-link{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header .nav-link li{
+    padding: 8px;
+}
+
+header .nav-link li a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 80px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    place-items: center ;
+    gap: 15px;
+}
+
+article { 
+    max-width: 270px;
+}
+
+article h6 { 
+    font-size: 20px;
+}
+
+article img{
+    width: 270px;
+    height: 270px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+article .ubicación-puntuación{
+    display: flex;
+    justify-content: space-between;
+}
+
+article .descripción{
+    color: gray;
+}
+
+article .fecha{
+    color: gray;
+}
+
+article .precio{
+    color: gray;
+    font-weight: 700;
+    margin: top 2px; 
+}
